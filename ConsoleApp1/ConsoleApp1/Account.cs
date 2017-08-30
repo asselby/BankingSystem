@@ -8,14 +8,21 @@ namespace BankingSystem
 {
     public class Account
     {
+        public delegate void AccountStateHandler(string message);
+        AccountStateHandler del;
 
-        public int SelectionSum { get; set; }
+
+
+
+
+
         public double AvailabelAmount { get; set; }
         public string AccountNumber { get; set; }
-        public string Sum { get; set; }
-        public int GetMoney()
+        public void Check(double x)
         {
-            return SelectionSum;
+            x = AvailabelAmount;
+
+            Console.WriteLine("Вашем счете хранится {0} ", x);
         }
         public void PutMoney(double x)
         {
