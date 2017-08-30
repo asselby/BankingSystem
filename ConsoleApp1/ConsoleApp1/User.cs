@@ -18,8 +18,11 @@ namespace BankingSystem
         public string IdCardNumber { get; set; }
 
         public string TelephoneNumber { get; set; }
+    
+        public Language Language { get; set; }
 
-        public List<Account> Account { get; set; }
+        public List<Account> Accounts { get; set; }
+
         public List<Card> Cards { get; set; }
 
 

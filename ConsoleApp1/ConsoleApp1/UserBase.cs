@@ -6,22 +6,44 @@ using System.Threading.Tasks;
 
 namespace BankingSystem
 {
-    class UsersBase
+    public class UsersBase
     {
-        User user = new User()
-        {
 
-        };
+        List<User> users;
+        public UsersBase()
+        {
+            users = new List<User>();
+        }
 
         public void Dump()
         {
 
-            user = new User();
+            Account account = new Account()
+            {
+                AccountNumber = ,
+                AvailabelAmount = ,
+                          
+            }
 
-            Card card = new Card();
-            card.IdentificationNUmber = "1234 4567 7890 0123";
 
-            user.Cards.Add(card);
+            User Elnar = new User()
+            {
+                IIN = "950419359295",
+                FirstName = "Уважанов",
+                MiddleName = "Ельнар",
+                LastName = "Ерланулы",
+                IdCardNumber = "123456789",
+                TelephoneNumber = "87055851520",
+
+                Language = new Language()
+                {
+                    nameOfLanguage = "Russian"
+                }
+              
+            };
+            
+            
+           
         }
     }
 }

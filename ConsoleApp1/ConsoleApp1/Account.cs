@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankingSystem
 {
-    public class Accounts
+    public class Account
     {
 
         public int SelectionSum { get; set; }
