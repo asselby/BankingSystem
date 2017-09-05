@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Card.cs" />
+    <Compile Include="EmailSender.cs" />
     <Compile Include="Language.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
